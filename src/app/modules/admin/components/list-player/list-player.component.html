@@ -1,0 +1,33 @@
+<app-button-create [value]="dataSend"></app-button-create>
+<div class="container mt-5 mb-5"> 
+    <div class="row m-2">
+        <div *ngFor="let player of Players" class="card text-center border-info col-6 col-md-4">
+            <div class="card-body">
+                <h4 class="card-title">{{player.name}} {{player.surname}}</h4>
+                <p class="card-text">
+                    Edad: {{player.age}}
+                </p>
+                <p class="card-text">
+                  Rol: {{player.position}}
+                </p>
+                <p *ngIf="player.position!=='Entrenador' && player.position!=='Fisioterapeuta' &&
+                          player.position!=='Medico' && player.position!=='Cuerpo tecnico' && 
+                          player.position!=='Directivo'" class="card-text">
+                    Partidos jugados: {{player.matchs}}
+                </p>
+                <p *ngIf="player.position!=='Entrenador' && player.position!=='Fisioterapeuta' &&
+                          player.position!=='Medico'  && player.position!=='Cuerpo tecnico' && 
+                          player.position!=='Directivo'" class="card-text">
+                    Goles: {{player.goals}}
+                </p>
+                <p *ngIf="player.position!=='Entrenador' && player.position!=='Fisioterapeuta' &&
+                          player.position!=='Medico' && player.position!=='Cuerpo tecnico' && 
+                          player.position!=='Directivo'" class="card-text">
+                    Asistencias: {{player.assists}}
+                </p>
+                <a routerLink="/admin/edit/{{player.id}}" class="m-2 text-white btn btn-primary">Editar</a>
+                <a (click)="deleteCard(player)" class="m-2 text-white btn btn-danger">Eliminar</a>
+              </div>
+        </div>
+    </div>
+</div>
