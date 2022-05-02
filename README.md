@@ -30,7 +30,7 @@ Las credenciales para acceder como administrador a la aplicación son:
 
 ### Documentación de la aplicación original
 
-Como ya se ha comentado previamente, para la realización de esta aplicación se ha hecho uso del proceso de Ingeniería inversa a partir de una aplicación entregada. Podrá ver la documentación de la aplicación original en la carpeta ```documentacion``` de este mismo proyecto. También, podrá acceder a esta documentación haciendo clic [aquí]().
+Como ya se ha comentado previamente, para la realización de esta aplicación se ha hecho uso del proceso de Ingeniería inversa a partir de una aplicación entregada. Podrá ver la documentación de la aplicación original en la carpeta ```documentacion``` de este mismo proyecto. También, podrá acceder a esta documentación haciendo clic [aquí](https://github.com/Danilooo99/Players-Ing-Inversa/blob/master/documentacion/Documentacion_Ingenieria_Inversa_DRP.pdf).
 
 
 ### Ejecutar el proyecto
