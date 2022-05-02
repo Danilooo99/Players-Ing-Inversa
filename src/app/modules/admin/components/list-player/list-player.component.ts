@@ -9,9 +9,8 @@ import { Player } from '../../models/player.model'
 })
 export class ListPlayerComponent implements OnInit {
 
-  dataSend: string = "Añadir jugador"; 
+  dataSend: string = "Añadir integrante"; 
   Players: Player[];
-  storage = localStorage.getItem('special');
 
   constructor(private playerService: PlayersService) { }
 

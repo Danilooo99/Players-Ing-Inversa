@@ -74,7 +74,6 @@ export class CreatePlayerComponent implements OnInit {
     var goals = document.getElementById("goals") as HTMLInputElement;
     var assists = document.getElementById("assists") as HTMLInputElement;
     this.selectedValue = e.target['value'].trim();
-    alert(this.selectedValue);
     if(this.selectedValue.includes('Entrenador') || this.selectedValue.includes('Fisioterapeuta') || this.selectedValue.includes('Medico')
        || this.selectedValue.includes('Cuerpo tecnico') || this.selectedValue.includes('Directivo')){
       matchs.disabled = true;
@@ -86,6 +85,4 @@ export class CreatePlayerComponent implements OnInit {
       goals.disabled = false;
     }
   }
-  
-
 }
