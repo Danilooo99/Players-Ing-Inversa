@@ -38,7 +38,7 @@ export class EditPlayerComponent implements OnInit {
         position: [this.playerRef.position, [Validators.required]],
         assists: [this.playerRef.assists, [Validators.required]],
         goals: [this.playerRef.goals, [Validators.required]],
-        matchs: [this.playerRef.goals, [Validators.required]],
+        matchs: [this.playerRef.matchs, [Validators.required]],
       });
 
       var matchs = document.getElementById("matchs") as HTMLInputElement;
